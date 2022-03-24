@@ -1,0 +1,24 @@
+{
+    "watch": {
+      "build": {
+        "patterns": ["ts/src"],
+        "extensions": "ts",
+        "runOnChangeOnly": true,
+        "delay": 3000
+      },
+      "dev": {
+        "patterns": ["ts/src"],
+        "extensions": "ts",
+        "runOnChangeOnly": true,
+        "delay": 3000
+      }
+      
+    },
+
+    "scripts": {
+      "build": "tsc && java -jar closure-compiler-v20220301.jar --js 'ts/build/**.js' --js_output_file site/js/app.js --language_in ECMASCRIPT_2015 --language_out ECMASCRIPT_2015 --compilation_level ADVANCED",
+      "watch": "npm-watch",
+      "dev": "tsc -p ./tsconfig.dev.json",
+      "clean": "rm ./ts/tsconfig.tsbuildinfo ; rm ./ts/build/* ; rm site/js/*"
+    }
+  }

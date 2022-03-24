@@ -1,0 +1,11 @@
+.DS_Store
+
+sitemap.xml
+
+tsconfig.tsbuildinfo
+./*.log
+
+site/js/*
+ts/build/*
+
+!/**/.gitkeep

@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.marginBottom {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border: solid;
+}
+
+#compteur {
+  --padding: 1rem;
+  border: solid;
+  font-size: 3.5rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  margin-top: 1rem;
+  font-family: monospace;
+  
+}
